@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
-@theme {
-  --color-primary: #0C5968;
-  --color-secondary: #B7CDD4;
+
+@theme default {
+  --color-primary: #A4CCD9;
+  --color-secondary: #97B6BD;
+}
+
+.animate-popIn {
+  animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+  0% { transform: translateY(-20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
 }
